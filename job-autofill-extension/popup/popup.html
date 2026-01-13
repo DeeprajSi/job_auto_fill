@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Job Autofill</title>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Application Autofill</h1>
+            <div class="subtitle">Fill forms with one click</div>
+        </div>
+
+        <div class="data-section">
+            <div class="data-item">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="John Doe">
+            </div>
+
+            <div class="data-item">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="john@example.com">
+            </div>
+
+            <div class="data-item">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
+            </div>
+
+            <div class="data-item">
+                <label for="skills">Skills / Experience</label>
+                <textarea id="skills" placeholder="JavaScript, React, Node.js, 5+ years experience..."></textarea>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="saveData" class="save-btn">
+                <span class="icon">💾</span>
+                Save Data
+            </button>
+            <button id="autofillBtn" class="primary-btn">
+                <span class="icon">⚡</span>
+                Autofill Form
+            </button>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script src="popup.js" />
+</body>
+
+</html>
